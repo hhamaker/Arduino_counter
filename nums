@@ -1,0 +1,364 @@
+void print_0() // writing 0
+{
+  digitalWrite(pinA, HIGH);   
+  digitalWrite(pinB, HIGH);   
+  digitalWrite(pinC, HIGH);   
+  digitalWrite(pinD, HIGH);   
+  digitalWrite(pinE, HIGH);   
+  digitalWrite(pinF, HIGH);   
+  digitalWrite(pinG, LOW);
+  digitalWrite(pinDP, LOW); // the decimal point is always off by default
+}
+
+void print_1() // writing 1
+{
+  digitalWrite(pinA, LOW);   
+  digitalWrite(pinB, HIGH);   
+  digitalWrite(pinC, HIGH);   
+  digitalWrite(pinD, LOW);   
+  digitalWrite(pinE, LOW);   
+  digitalWrite(pinF, LOW);   
+  digitalWrite(pinG, LOW);
+  digitalWrite(pinDP, LOW);
+}
+
+void print_2() // writing 2
+{
+  digitalWrite(pinA, HIGH);   
+  digitalWrite(pinB, HIGH);   
+  digitalWrite(pinC, LOW);   
+  digitalWrite(pinD, HIGH);   
+  digitalWrite(pinE, HIGH);   
+  digitalWrite(pinF, LOW);   
+  digitalWrite(pinG, HIGH);
+  digitalWrite(pinDP, LOW);
+}
+
+void print_3() // writing 3
+{
+  digitalWrite(pinA, HIGH);   
+  digitalWrite(pinB, HIGH);   
+  digitalWrite(pinC, HIGH);   
+  digitalWrite(pinD, HIGH);   
+  digitalWrite(pinE, LOW);   
+  digitalWrite(pinF, LOW);   
+  digitalWrite(pinG, HIGH);
+  digitalWrite(pinDP, LOW);
+}
+
+void print_4() // writing 4
+{
+  digitalWrite(pinA, LOW);   
+  digitalWrite(pinB, HIGH);   
+  digitalWrite(pinC, HIGH);   
+  digitalWrite(pinD, LOW);   
+  digitalWrite(pinE, LOW);   
+  digitalWrite(pinF, HIGH);   
+  digitalWrite(pinG, HIGH);
+  digitalWrite(pinDP, LOW);
+}
+
+void print_5() // writing 5
+{
+  digitalWrite(pinA, HIGH);   
+  digitalWrite(pinB, LOW);   
+  digitalWrite(pinC, HIGH);   
+  digitalWrite(pinD, HIGH);   
+  digitalWrite(pinE, LOW);   
+  digitalWrite(pinF, HIGH);   
+  digitalWrite(pinG, HIGH);
+  digitalWrite(pinDP, LOW);
+}
+
+void print_6() // writing 6
+{
+  digitalWrite(pinA, HIGH);   
+  digitalWrite(pinB, LOW);   
+  digitalWrite(pinC, HIGH);   
+  digitalWrite(pinD, HIGH);   
+  digitalWrite(pinE, HIGH);   
+  digitalWrite(pinF, HIGH);   
+  digitalWrite(pinG, HIGH);
+  digitalWrite(pinDP, LOW);
+}
+
+void print_7() // writing 7
+{
+  digitalWrite(pinA, HIGH);   
+  digitalWrite(pinB, HIGH);   
+  digitalWrite(pinC, HIGH);   
+  digitalWrite(pinD, LOW);   
+  digitalWrite(pinE, LOW);   
+  digitalWrite(pinF, LOW);   
+  digitalWrite(pinG, LOW);
+  digitalWrite(pinDP, LOW);
+}
+
+void print_8() // writing 8
+{
+  digitalWrite(pinA, HIGH);   
+  digitalWrite(pinB, HIGH);   
+  digitalWrite(pinC, HIGH);   
+  digitalWrite(pinD, HIGH);   
+  digitalWrite(pinE, HIGH);   
+  digitalWrite(pinF, HIGH);   
+  digitalWrite(pinG, HIGH);
+  digitalWrite(pinDP, LOW);
+}
+
+void print_9() // writing 9
+{
+  digitalWrite(pinA, HIGH);   
+  digitalWrite(pinB, HIGH);   
+  digitalWrite(pinC, HIGH);   
+  digitalWrite(pinD, HIGH);   
+  digitalWrite(pinE, LOW);   
+  digitalWrite(pinF, HIGH);   
+  digitalWrite(pinG, HIGH);
+  digitalWrite(pinDP, LOW);
+}
+
+void print_A() // writing A
+{
+  digitalWrite(pinA, HIGH);   
+  digitalWrite(pinB, HIGH);   
+  digitalWrite(pinC, HIGH);   
+  digitalWrite(pinD, LOW);   
+  digitalWrite(pinE, HIGH);   
+  digitalWrite(pinF, HIGH);   
+  digitalWrite(pinG, HIGH);
+  digitalWrite(pinDP, LOW);
+}
+
+void print_b() // writing b
+{
+  digitalWrite(pinA, LOW);   
+  digitalWrite(pinB, LOW);   
+  digitalWrite(pinC, HIGH);   
+  digitalWrite(pinD, HIGH);   
+  digitalWrite(pinE, HIGH);   
+  digitalWrite(pinF, HIGH);   
+  digitalWrite(pinG, HIGH);
+  digitalWrite(pinDP, LOW);
+}
+
+void print_C() // writing C
+{
+  digitalWrite(pinA, HIGH);   
+  digitalWrite(pinB, LOW);   
+  digitalWrite(pinC, LOW);   
+  digitalWrite(pinD, HIGH);   
+  digitalWrite(pinE, HIGH);   
+  digitalWrite(pinF, HIGH);   
+  digitalWrite(pinG, LOW);
+  digitalWrite(pinDP, LOW);
+}
+
+void print_d() // writing d
+{
+  digitalWrite(pinA, LOW);   
+  digitalWrite(pinB, HIGH);   
+  digitalWrite(pinC, HIGH);   
+  digitalWrite(pinD, HIGH);   
+  digitalWrite(pinE, HIGH);   
+  digitalWrite(pinF, LOW);   
+  digitalWrite(pinG, HIGH);
+  digitalWrite(pinDP, LOW);
+}
+
+void print_E() // writing E
+{
+  digitalWrite(pinA, HIGH);   
+  digitalWrite(pinB, LOW);   
+  digitalWrite(pinC, LOW);   
+  digitalWrite(pinD, HIGH);   
+  digitalWrite(pinE, HIGH);   
+  digitalWrite(pinF, HIGH);   
+  digitalWrite(pinG, HIGH);
+  digitalWrite(pinDP, LOW);
+}
+
+void print_F() // writing F
+{
+  digitalWrite(pinA, HIGH);   
+  digitalWrite(pinB, LOW);   
+  digitalWrite(pinC, LOW);   
+  digitalWrite(pinD, LOW);   
+  digitalWrite(pinE, HIGH);   
+  digitalWrite(pinF, HIGH);   
+  digitalWrite(pinG, HIGH);
+  digitalWrite(pinDP, LOW);
+}
+
+void print_H() // writing H
+{
+  digitalWrite(pinA, LOW);   
+  digitalWrite(pinB, HIGH);   
+  digitalWrite(pinC, HIGH);   
+  digitalWrite(pinD, LOW);   
+  digitalWrite(pinE, HIGH);   
+  digitalWrite(pinF, HIGH);   
+  digitalWrite(pinG, HIGH);
+  digitalWrite(pinDP, LOW);
+}
+
+void print_h() // writing h
+{
+  digitalWrite(pinA, LOW);   
+  digitalWrite(pinB, LOW);   
+  digitalWrite(pinC, HIGH);   
+  digitalWrite(pinD, LOW);   
+  digitalWrite(pinE, HIGH);   
+  digitalWrite(pinF, HIGH);   
+  digitalWrite(pinG, HIGH);
+  digitalWrite(pinDP, LOW);
+}
+
+void print_J() // writing J
+{
+  digitalWrite(pinA, LOW);   
+  digitalWrite(pinB, HIGH);   
+  digitalWrite(pinC, HIGH);   
+  digitalWrite(pinD, HIGH);   
+  digitalWrite(pinE, LOW);   
+  digitalWrite(pinF, LOW);   
+  digitalWrite(pinG, LOW);
+  digitalWrite(pinDP, LOW);
+}
+
+void print_L() // writing L
+{
+  digitalWrite(pinA, LOW);   
+  digitalWrite(pinB, LOW);   
+  digitalWrite(pinC, LOW);   
+  digitalWrite(pinD, HIGH);   
+  digitalWrite(pinE, HIGH);   
+  digitalWrite(pinF, HIGH);   
+  digitalWrite(pinG, LOW);
+  digitalWrite(pinDP, LOW);
+}
+
+void print_n() // writing n
+{
+  digitalWrite(pinA, HIGH);   
+  digitalWrite(pinB, HIGH);   
+  digitalWrite(pinC, HIGH);   
+  digitalWrite(pinD, LOW);   
+  digitalWrite(pinE, HIGH);   
+  digitalWrite(pinF, HIGH);   
+  digitalWrite(pinG, LOW);
+  digitalWrite(pinDP, LOW);   
+}
+
+void print_O() // writing O
+{
+  digitalWrite(pinA, HIGH);   
+  digitalWrite(pinB, HIGH);   
+  digitalWrite(pinC, HIGH);   
+  digitalWrite(pinD, HIGH);   
+  digitalWrite(pinE, HIGH);   
+  digitalWrite(pinF, HIGH);   
+  digitalWrite(pinG, LOW);
+  digitalWrite(pinDP, LOW);
+}
+
+void print_o() // writing o
+{
+  digitalWrite(pinA, LOW);   
+  digitalWrite(pinB, LOW);   
+  digitalWrite(pinC, HIGH);   
+  digitalWrite(pinD, HIGH);   
+  digitalWrite(pinE, HIGH);   
+  digitalWrite(pinF, LOW);   
+  digitalWrite(pinG, HIGH);
+  digitalWrite(pinDP, LOW);
+}
+
+void print_P() // writing P
+{
+  digitalWrite(pinA, HIGH);   
+  digitalWrite(pinB, HIGH);   
+  digitalWrite(pinC, LOW);   
+  digitalWrite(pinD, LOW);   
+  digitalWrite(pinE, HIGH);   
+  digitalWrite(pinF, HIGH);   
+  digitalWrite(pinG, HIGH);
+  digitalWrite(pinDP, LOW);
+}
+
+void print_r() // writing r
+{
+  digitalWrite(pinA, LOW);   
+  digitalWrite(pinB, LOW);   
+  digitalWrite(pinC, LOW);   
+  digitalWrite(pinD, LOW);   
+  digitalWrite(pinE, HIGH);   
+  digitalWrite(pinF, LOW);   
+  digitalWrite(pinG, HIGH);
+  digitalWrite(pinDP, LOW);
+}
+
+void print_t() // writing t
+{
+  digitalWrite(pinA, LOW);   
+  digitalWrite(pinB, LOW);   
+  digitalWrite(pinC, LOW);   
+  digitalWrite(pinD, HIGH);   
+  digitalWrite(pinE, HIGH);   
+  digitalWrite(pinF, HIGH);   
+  digitalWrite(pinG, HIGH);
+  digitalWrite(pinDP, LOW);
+}
+
+void print_u() // writing u
+{
+  digitalWrite(pinA, LOW);   
+  digitalWrite(pinB, LOW);   
+  digitalWrite(pinC, HIGH);   
+  digitalWrite(pinD, HIGH);   
+  digitalWrite(pinE, HIGH);   
+  digitalWrite(pinF, LOW);   
+  digitalWrite(pinG, LOW);
+  digitalWrite(pinDP, LOW);
+}
+
+void print_y() // writing y
+{
+  digitalWrite(pinA, LOW);   
+  digitalWrite(pinB, HIGH);   
+  digitalWrite(pinC, HIGH);   
+  digitalWrite(pinD, HIGH);   
+  digitalWrite(pinE, LOW);   
+  digitalWrite(pinF, HIGH);   
+  digitalWrite(pinG, HIGH);
+  digitalWrite(pinDP, LOW);
+}
+
+void print_decimal() // writing the decimal point
+{
+  digitalWrite(pinDP, HIGH);
+}
+
+void print_OFF() // turning all 7 segments plus the decimal point off
+{
+  digitalWrite(pinA, LOW);   
+  digitalWrite(pinB, LOW);   
+  digitalWrite(pinC, LOW);   
+  digitalWrite(pinD, LOW);   
+  digitalWrite(pinE, LOW);   
+  digitalWrite(pinF, LOW);   
+  digitalWrite(pinG, LOW);
+  digitalWrite(pinDP, LOW);
+}
+
+void print_off() // turning all 7 segments plus the decimal point off
+{
+  digitalWrite(pinA, LOW);   
+  digitalWrite(pinB, LOW);   
+  digitalWrite(pinC, LOW);   
+  digitalWrite(pinD, LOW);   
+  digitalWrite(pinE, LOW);   
+  digitalWrite(pinF, LOW);   
+  digitalWrite(pinG, LOW);
+  digitalWrite(pinDP, LOW);
+}
