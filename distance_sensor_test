@@ -1,0 +1,144 @@
+// test for HC-SR04
+
+#define trigPin 45
+#define echoPin 47
+
+int pinA = 3;
+int pinB = 7;
+int pinC = 12;
+int pinD = 10;
+int pinE = 9;
+int pinF = 4;
+int pinG = 13;
+int pinDP = 11; // the decimal point pin
+int D1 = 2;
+int D2 = 5;
+int D3 = 6;
+int D4 = 8;
+//int t = 250; // time delay
+
+int count;
+
+float duration, distance;
+
+void setup() {
+  Serial.begin (9600);
+  pinMode(trigPin, OUTPUT);
+  pinMode(echoPin, INPUT);
+
+    // initialise the digital pins as outputs.
+  pinMode(pinA, OUTPUT);     
+  pinMode(pinB, OUTPUT);     
+  pinMode(pinC, OUTPUT);     
+  pinMode(pinD, OUTPUT);     
+  pinMode(pinE, OUTPUT);     
+  pinMode(pinF, OUTPUT);     
+  pinMode(pinG, OUTPUT);   
+  pinMode(pinDP, OUTPUT);  
+  pinMode(D1, OUTPUT);  
+  pinMode(D2, OUTPUT);  
+  pinMode(D3, OUTPUT);  
+  pinMode(D4, OUTPUT);  
+
+//  print_OFF();
+}
+
+void loop() {
+
+  digitalWrite(trigPin, LOW);
+  delayMicroseconds(2);
+  digitalWrite(trigPin, HIGH);
+  delayMicroseconds(10);
+  digitalWrite(trigPin, LOW);
+
+  duration = pulseIn(echoPin, HIGH);
+
+  distance = (duration / 2) * 0.0343;
+
+  //Serial.print("Distance = ");
+  if (distance >= 400 || distance <= 2) {
+    Serial.println("Out of range");
+  }
+  else if (distance <= 100) {
+    count++;
+    if (count <= 9){
+      write_D4();
+      printNum(count);
+    }
+    else if (count >= 10 && count <= 99){
+      /*if (count % 10 == 0){
+        write_D3;
+        printNum(count / 10);
+      }
+      else {
+        write_D4;
+        printNum(count % 10);
+      }*/
+      digitalWrite(D3, LOW);
+      digitalWrite(D4, HIGH);
+      //write_D3();
+      printNum(count/10);
+      //write_D4();
+      digitalWrite(D4, LOW);
+      digitalWrite(D3, HIGH);
+      printNum(count%10);
+    }
+    else if (count <= 999 && count >= 100){
+      write_D2();
+      printNum(count/100);
+      write_D3();
+      printNum(count/10);
+      write_D4();
+      printNum(count%10);
+    }
+    else if (count <= 9999 && count >= 1000){
+      write_D1();
+      printNum(count/1000);
+      write_D2();
+      printNum(count/100);
+      write_D3();
+      printNum(count/10);
+      write_D4();
+      printNum(count%10);
+    }
+    else{
+      write_D1();
+      print_n();
+      write_D2();
+      print_u();
+      write_D3();
+      print_L();
+      write_D4();
+      print_L();
+    }
+  }
+}
+ 
+
+
+/*prev code
+ * 
+ *     write_D1();
+    printNum(count/1000);
+    write_D2();
+    printNum(count/100);
+    write_D3();
+    printNum(count/10);
+    write_D4();
+    printNum(count%10);
+  }
+  else{
+    delay(50);
+  }
+}
+    Serial.println(count);
+    write_D4();
+    printNum(count);
+    delay(500);
+  }
+  else {
+    //Serial.print(distance);
+    //Serial.println(" cm");
+    delay(50);
+  }
+}*/
