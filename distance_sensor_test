@@ -61,38 +61,9 @@ void loop() {
   }
   else if (distance <= 100) {
     count++;
-    if (count <= 9){
-      write_D4();
-      printNum(count);
-    }
-    else if (count >= 10 && count <= 99){
-      /*if (count % 10 == 0){
-        write_D3;
-        printNum(count / 10);
-      }
-      else {
-        write_D4;
-        printNum(count % 10);
-      }*/
-      digitalWrite(D3, LOW);
-      digitalWrite(D4, HIGH);
-      //write_D3();
-      printNum(count/10);
-      //write_D4();
-      digitalWrite(D4, LOW);
-      digitalWrite(D3, HIGH);
-      printNum(count%10);
-    }
-    else if (count <= 999 && count >= 100){
-      write_D2();
-      printNum(count/100);
-      write_D3();
-      printNum(count/10);
-      write_D4();
-      printNum(count%10);
-    }
-    else if (count <= 9999 && count >= 1000){
+    if (count <= 9999 && count >= 1){
       write_D1();
+//do you have logs you can print out the value of count/1000
       printNum(count/1000);
       write_D2();
       printNum(count/100);
